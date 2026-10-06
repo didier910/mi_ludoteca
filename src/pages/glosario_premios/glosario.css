@@ -1,0 +1,154 @@
+/* ── Utilidades ── */
+.justificado {
+    text-align: justify;
+}
+
+.centrado {
+    text-align: center;
+}
+
+.negrita {
+    font-weight: bold;
+}
+
+/* ── Título de sección ── */
+.seccion-titulo {
+    font-family: 'Righteous', sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    color: #5B2D8E;
+    text-align: center;
+    margin: 2rem 0 0.5rem 0;
+    letter-spacing: 0.5px;
+}
+
+.seccion-desc {
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #8A7AAA;
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 1.5rem;
+    line-height: 1.6;
+}
+
+/* ── Grid de cards ── */
+.concept-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    padding: 10px;
+    max-width: 1200px;
+    margin: 1rem auto;
+}
+
+/* ── Card solo con título y gradiente ── */
+.concept-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #EDE7F6, #D1C4E9);
+    border: 2px solid #E0D8F0;
+    border-radius: 18px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+    box-shadow: 4px 4px 4px #00000020;
+    height: 120px;
+    padding: 16px;
+}
+
+.concept-card:hover {
+    transform: translateY(-4px) rotate(-0.5deg);
+    box-shadow: 0 12px 28px rgba(91, 45, 142, 0.18);
+    border-color: #7B42B8;
+    background: linear-gradient(135deg, #D1C4E9, #B39DDB);
+}
+
+.concept-card-titulo {
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    font-weight: 800;
+    color: #1A1025;
+    text-align: center;
+    margin: 0;
+    line-height: 1.4;
+}
+
+/* ── Contenido de Item (detalle de concepto/premio) ── */
+.item-content {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: left;
+    color: #1A1025;
+    line-height: 1.7;
+    font-size: 15px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.item-content p {
+    margin: 0 0 18px 0;
+}
+
+.item-content p:last-child {
+    margin-bottom: 0;
+}
+
+.item-content h1,
+.item-content h2,
+.item-content h3,
+.item-content h4 {
+    margin: 28px 0 14px 0;
+    color: #5B2D8E;
+    font-family: 'Righteous', sans-serif;
+    font-weight: 400;
+}
+
+.item-content ul,
+.item-content ol {
+    margin: 0 0 18px 0;
+    padding-left: 24px;
+}
+
+.item-content li {
+    margin-bottom: 8px;
+}
+
+.subtitulo {
+    font-family: 'Righteous', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    color: #5B2D8E;
+    text-align: center;
+    margin: 1.5rem 0 0.5rem 0;
+}
+
+.link-award {
+    color: #5B2D8E;
+    font-weight: 700;
+}
+
+.texto-resaltado {
+    font-weight: 700;
+}
+
+/* ── Responsive ── */
+@media (max-width: 800px) {
+    .concept-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 550px) {
+    .concept-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .seccion-titulo {
+        font-size: 22px;
+        margin-top: 1rem;
+    }
+}

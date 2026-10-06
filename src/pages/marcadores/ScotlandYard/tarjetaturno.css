@@ -1,0 +1,148 @@
+
+.tarjeta {
+    background-color: #000;
+    padding: 15px;
+    width: 240px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+  }
+
+  .etiqueta-num {
+    color: #fff;
+  }
+
+
+.etiqueta-num label {
+    display: inline;
+    margin: 0;
+    padding: 0;
+  }
+  
+
+.contenedor-input {
+    position: relative;
+    flex: 1;
+  }
+  
+  .caja-texto {
+    width: 60px;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    position: relative;
+    z-index: 1;
+  }
+
+
+.cortina {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    background-color: gray;
+    border-radius: 8px;
+    transition: width 0.4s ease;
+    z-index: 2;
+  }
+  
+  .cortina.cerrado {
+    width: 100%;
+  }
+
+
+.botones {
+    display: flex;
+    gap: 10px;
+  }
+  
+  
+  
+.boton {
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #444;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+.boton-circular {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    
+
+    background: conic-gradient(
+        #3498db 0% 25%,    /* azul equilibrado */
+        gray 25% 50%,     /* rojo suave */
+        #e63946 50% 75%,    /* amarillo claro */
+        #f1c40f 75% 100%    /* amarillo cálido */
+      );
+    
+
+    cursor: pointer;
+    border: 2px solid #fff;
+
+
+/* Alineación vertical */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: auto;
+  margin-bottom: auto;
+
+  }
+
+
+.icono-cortina {
+    color: white;
+    font-size: 24px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+
+  .circulo-blanco,
+  .circulo-negro {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: transparent;
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    line-height: 1;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .circulo-blanco {
+    border: 2px solid white;
+  }
+  
+  .circulo-negro {
+    border: 2px solid black;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  

@@ -1,0 +1,43 @@
+.estiloBarra {
+    height: 100%;
+    transition: width 0.5s ease-in-out;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.estiloContenedor {
+    width: 95%;
+    height: 30px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 10px 0;
+}
+
+.estiloNombre {
+    width: 200px;
+    margin-right: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: bold;
+}
+
+
+.svg_size_bar>svg {
+    width: 30px; 
+}
+
+@media (max-width: 550px) {
+
+    .estiloNombre {
+        width: 60px;
+    }
+
+    .estiloContenedor {
+        width: 85%;
+    }
+
+}

@@ -1,0 +1,157 @@
+.active {
+    font-weight: bold;
+    color: #F5A623 !important;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    font-size: 18px;
+    background: #1A1025;
+    padding: 0 1.5rem;
+    box-sizing: border-box;
+}
+
+/* ── Logo ── */
+nav .title {
+    margin: 0;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    padding: 0.75rem 0;
+}
+
+.logo-pip {
+    width: 32px;
+    height: 32px;
+    background: #F5A623;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.logo-pip img {
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
+    /* El png original es rojo; esto lo vuelve negro para que combine con el fondo dorado */
+    filter: brightness(0) saturate(100%);
+}
+
+.logo-text {
+    font-family: 'Righteous', 'Nunito', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #F5A623;
+}
+
+/* ── Nav links ── */
+nav ul {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    padding: 0;
+    gap: 4px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+    padding: 0.5rem 0.9rem;
+    margin: 0;
+    border-radius: 100px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 0.85rem;
+    transition: background 0.15s, color 0.15s;
+}
+
+nav ul li a:not(.active):hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+/* ── Mobile menu button ── */
+nav .menu {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 2.25rem;
+    height: 2.25rem;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+nav .menu svg,
+nav .menu path,
+nav .menu rect,
+nav .menu line {
+    fill: #F5A623;
+    stroke: #F5A623;
+}
+
+@media (max-width: 550px) {
+    nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 1rem;
+        min-height: 56px;
+    }
+
+    nav .title {
+        display: flex;
+        align-items: center;
+        flex: 1;
+    }
+
+    nav .menu {
+        display: flex;
+    }
+
+    nav ul {
+        height: 0;
+        overflow: hidden;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 0;
+        transition: height 0.2s linear;
+        align-items: flex-start;
+        gap: 0;
+        order: 3;
+        padding: 0;
+    }
+
+    nav ul.open {
+        height: 200px;
+        padding-bottom: 8px;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li a {
+        margin: 0.2rem 0.5rem;
+        border-radius: 8px;
+    }
+}

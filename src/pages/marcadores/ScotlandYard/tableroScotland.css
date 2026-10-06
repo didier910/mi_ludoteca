@@ -1,0 +1,33 @@
+
+
+
+
+.tablero-scotland {
+  display: flex;
+  justify-content: center;
+  gap: 0;
+}
+
+/* Vista mobile */
+@media (max-width: 768px) {
+  .tablero-scotland {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .columna {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .tarjeta {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+  
+  
+  
+  

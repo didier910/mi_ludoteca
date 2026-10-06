@@ -1,0 +1,286 @@
+/* ── Hero del juego — full width, mismo truco que el buscador ── */
+.game-hero {
+    background: linear-gradient(135deg, #5B2D8E 0%, #1A1025 100%);
+    padding: calc(44px + 56px) 32px 44px;
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    margin-top: calc(-56px - 2rem);
+    box-sizing: border-box;
+}
+
+.game-hero-dots {
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(circle, rgba(245, 166, 35, 0.15) 1px, transparent 1px);
+    background-size: 28px 28px;
+    pointer-events: none;
+}
+
+.game-hero-content {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    gap: 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+    position: relative;
+    align-items: start;
+}
+
+/* ── Imagen del juego — sin fondo, directo sobre el morado ── */
+.game-hero-img-wrap {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.game-img {
+    width: 100%;
+    height: auto;
+    max-height: 340px;
+    object-fit: contain;
+    margin: 0;
+    border-radius: 10px;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
+}
+
+/* ── Info ── */
+.game-hero-info {
+    text-align: left;
+}
+
+.game-hero-titulo {
+    font-family: 'Righteous', sans-serif;
+    font-size: 34px;
+    font-weight: 400;
+    color: #fff;
+    letter-spacing: 0.5px;
+    line-height: 1.2;
+    margin: 0 0 20px 0;
+}
+
+.game-ficha {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px 24px;
+    margin-bottom: 24px;
+}
+
+.game-ficha-item {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.game-ficha-item--wide {
+    grid-column: 1 / -1;
+}
+
+.game-ficha-label {
+    font-family: 'Nunito', sans-serif;
+    font-size: 11px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    color: #F5A623;
+}
+
+.game-ficha-value {
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.game-reglamento-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #F5A623;
+    color: #1A1025;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    font-size: 13px;
+    padding: 10px 20px;
+    border-radius: 100px;
+    text-decoration: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    transition: background 0.15s, transform 0.1s;
+}
+
+.game-reglamento-btn:hover {
+    background: #fff;
+    transform: translateY(-1px);
+}
+
+.game-reglamento-btn svg {
+    width: 16px;
+    fill: #1A1025;
+}
+
+/* ── Tabs ── */
+.game-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin: 32px 0 24px;
+}
+
+.game-tab {
+    font-family: 'Nunito', sans-serif;
+    font-size: 13px;
+    font-weight: 800;
+    padding: 10px 24px;
+    border-radius: 100px;
+    border: none;
+    background: #FFFFFF;
+    color: #8A7AAA;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: background 0.15s, color 0.15s;
+}
+
+.game-tab:hover {
+    background: #F4F1FB;
+}
+
+.game-tab.active {
+    background: #5B2D8E;
+    color: #fff;
+}
+
+/* ── Contenido ── */
+.game-content {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: left;
+    color: #1A1025;
+    line-height: 1.7;
+    font-size: 15px;
+}
+
+.game-content p {
+    margin: 0 0 18px 0;
+}
+
+.game-content p:last-child {
+    margin-bottom: 0;
+}
+
+.game-content h1,
+.game-content h2,
+.game-content h3,
+.game-content h4 {
+    margin: 28px 0 14px 0;
+    color: #5B2D8E;
+    font-family: 'Righteous', sans-serif;
+    font-weight: 400;
+}
+
+.game-content ul,
+.game-content ol {
+    margin: 0 0 18px 0;
+    padding-left: 24px;
+}
+
+.game-content li {
+    margin-bottom: 8px;
+}
+
+.game-empty {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    color: #8A7AAA;
+    font-weight: 700;
+}
+
+a {
+    color: #5B2D8E;
+    font-weight: 700;
+}
+
+.svg_size>svg {
+    width: 16px;
+}
+
+.svg_size_gen {
+    padding: 0 10px;
+    display: inline-block;
+}
+
+.svg_size_gen>svg {
+    width: 45px;
+}
+
+.svg_size_small>svg {
+    width: 35px;
+}
+
+.svg_size_gen>svg text {
+    font-weight: bold;
+}
+
+.contenedor-video {
+    position: relative;
+    padding-bottom: 42.86%;
+    height: 0;
+    overflow: hidden;
+    margin: 24px auto 40px;
+    max-width: 800px;
+    border-radius: 12px;
+}
+
+.contenedor-video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+}
+
+/* ── Responsive ── */
+@media (max-width: 800px) {
+    .game-hero-content {
+        grid-template-columns: 1fr;
+        max-width: 480px;
+    }
+
+    .game-hero-info {
+        text-align: center;
+    }
+
+    .game-hero-titulo {
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .game-ficha {
+        text-align: left;
+    }
+}
+
+@media (max-width: 550px) {
+    .game-hero {
+        padding: calc(32px + 56px) 16px 32px;
+        margin-top: calc(-56px - 1rem);
+    }
+
+    .game-ficha {
+        grid-template-columns: 1fr;
+    }
+
+    .game-tabs {
+        flex-wrap: wrap;
+    }
+
+    .contenedor-video {
+        padding-bottom: 56.25%;
+        margin-bottom: 32px;
+    }
+}

@@ -1,0 +1,473 @@
+/* ── Grid de marcadores ── */
+.score-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 16px;
+  padding: 10px;
+  max-width: 500px;
+  margin: 1rem auto;
+}
+
+/* ── Card ── */
+.score-card {
+  background-color: #C5B3E0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  border: 2px solid #B39DDB;
+  padding: 5px 0;
+  box-shadow: 0 4px 12px rgba(91, 45, 142, 0.15);
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+  height: 150px;
+}
+
+.score-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(91, 45, 142, 0.25);
+  border-color: #7B42B8;
+  background-color: #B39DDB;
+}
+
+.img-game-title {
+  width: auto;
+  height: 80px;
+  max-width: 300px;
+  object-fit: contain;
+}
+
+/* ── Título y descripción ── */
+.score-container~p,
+.justificado {
+  font-family: 'Nunito', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #8A7AAA;
+  line-height: 1.6;
+}
+
+/* ── InputPlayers ── */
+.input-players-wrap {
+  max-width: 380px;
+  margin: 1.5rem auto;
+  text-align: center;
+}
+
+.input-players-titulo {
+  font-family: 'Righteous', sans-serif;
+  font-size: 18px;
+  color: #5B2D8E;
+  margin-bottom: 16px;
+  letter-spacing: 0.5px;
+}
+
+.input-player-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  background: #fff;
+  border: 2px solid #E0D8F0;
+  border-radius: 100px;
+  padding: 8px 14px;
+  transition: border-color 0.2s;
+}
+
+.input-player-row:focus-within {
+  border-color: #7B42B8;
+}
+
+.input-player-icon {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  opacity: 0.45;
+}
+
+.input-player-icon svg {
+  width: 18px;
+}
+
+.input-player-field {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-family: 'Nunito', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #1A1025;
+  background: transparent;
+}
+
+.input-player-field::placeholder {
+  color: #B0A0CC;
+}
+
+.input-player-delete {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  flex-shrink: 0;
+  opacity: 0.35;
+  transition: opacity 0.15s;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.input-player-delete:hover {
+  opacity: 1;
+}
+
+.input-player-delete svg {
+  width: 16px;
+  fill: #E8344A;
+  stroke: #E8344A;
+}
+
+.input-players-agregar {
+  margin-top: 14px;
+}
+
+/* ── Botones dentro de marcadores ── */
+button {
+  margin: 5px;
+  font-family: 'Nunito', sans-serif;
+}
+
+.botonmas {
+  background-color: #2ECC71;
+  color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  font-weight: 800;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.botonmas:hover {
+  background-color: #27ae60;
+}
+
+.botonmenos {
+  background-color: #E0D8F0;
+  color: #1A1025;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  font-weight: 800;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.botonmenos:hover {
+  background-color: #D1C4E9;
+}
+
+/* ── Resto de estilos internos de marcadores (sin cambios funcionales) ── */
+.tablero-card-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tablero-card {
+  width: 250px;
+}
+
+.tablero-card-think {
+  width: 250px;
+}
+
+.input-number {
+  width: 40px;
+}
+
+.img-loseta {
+  width: 50px;
+  height: auto;
+}
+
+.img-star>svg {
+  width: 30px;
+}
+
+.negrita-resultado {
+  font-weight: bold;
+  font-size: 2rem;
+  color: #5B2D8E;
+}
+
+.boton-eliminar {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  fill: #8A7AAA;
+  transition: fill 0.3s ease;
+  margin-left: 5px;
+}
+
+.boton-eliminar:hover {
+  fill: #E8344A;
+}
+
+.question-label {
+  border-radius: 12px;
+  padding: 10px 20px;
+  width: 200px;
+  height: 250px;
+  word-wrap: break-word;
+  text-align: center;
+  display: grid;
+  place-items: center;
+  border: 2px solid #E0D8F0;
+  background: #5B2D8E;
+  color: white;
+  margin: 0 auto;
+  box-shadow: 4px 4px 12px rgba(91, 45, 142, 0.3);
+}
+
+.questions-list {
+  margin-top: 20px;
+}
+
+.question-label-list {
+  border-radius: 10px;
+  padding: 10px 20px;
+  word-wrap: break-word;
+  text-align: left;
+  display: grid;
+  place-items: left;
+  border: 1px solid #E0D8F0;
+  background: #5B2D8E;
+  color: white;
+  margin: 0 auto;
+  margin-bottom: 5px;
+}
+
+.custom-checkbox {
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  background-color: #F4F1FB;
+  border: 2px solid #E0D8F0;
+  cursor: pointer;
+}
+
+.custom-label {
+  margin-left: 10px;
+  cursor: pointer;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+}
+
+.select-reducido {
+  width: 80px;
+}
+
+.select-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+
+.random-letter-label {
+  font-size: 6em;
+  font-weight: bolder;
+  padding: 10px;
+  color: #5B2D8E;
+  font-family: 'Righteous', sans-serif;
+}
+
+.container-columns {
+  display: flex;
+}
+
+.container-columns>div {
+  flex: 1;
+}
+
+/* ── Tablero Basta ── */
+.tablero-basta {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.tablero-basta p {
+  margin-bottom: 16px;
+}
+
+.tablero-basta .centrado {
+  font-family: 'Nunito', sans-serif;
+  font-size: 14px;
+  color: #8A7AAA;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.tablero-basta .question-label {
+  width: 220px;
+  height: 160px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 16px;
+  border: none;
+}
+
+.tablero-basta .random-letter-label {
+  font-family: 'Righteous', sans-serif;
+  font-size: 5rem;
+  color: #5B2D8E;
+  display: block;
+  margin: 8px 0;
+  line-height: 1;
+}
+
+.tablero-basta .container-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.tablero-basta .elemento-info-1,
+.tablero-basta .elemento-info-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 16px;
+  background: #fff;
+  border: 2px solid #E0D8F0;
+  border-radius: 18px;
+}
+
+.tablero-basta .checkbox-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.tablero-basta .select-container {
+  flex-direction: column;
+  gap: 6px;
+}
+
+.tablero-basta .select-reducido {
+  width: 80px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: 2px solid #E0D8F0;
+  outline: none;
+}
+
+.tablero-basta .question-label-list {
+  font-family: 'Nunito', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  border-radius: 12px;
+  border: none;
+  width: 100%;
+  margin-bottom: 6px;
+  padding: 10px 14px;
+}
+
+.tablero-basta .questions-list {
+  width: 100%;
+  margin-top: 8px;
+}
+
+@media (max-width: 550px) {
+  .tablero-basta .container-info {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ── Tablero Akropolis ── */
+.tablero-akropolis p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.tablero-akropolis .negrita {
+  min-width: 28px;
+  text-align: left;
+}
+
+/* ── ContadorItem (Calico, Sagrada, Sushi, Harmonies) ── */
+.contador-item-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+/* ── Tablero Carcassonne ── */
+.tablero-carcassonne>div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 550px) {
+  .tablero-card-think {
+    width: 150px;
+  }
+}
+
+/* ── Botones de acción del marcador ── */
+.btn-marcador-accion {
+  font-family: 'Nunito', sans-serif !important;
+  font-size: 13px !important;
+  font-weight: 800 !important;
+  padding: 10px 22px !important;
+  border-radius: 100px !important;
+  border: none !important;
+  background: #5B2D8E !important;
+  color: #fff !important;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(91, 45, 142, 0.3);
+  transition: background 0.15s, transform 0.1s;
+  margin: 4px;
+}
+
+.btn-marcador-accion:hover {
+  background: #7B42B8 !important;
+  transform: translateY(-1px);
+}
+
+.btn-marcador-nueva {
+  font-family: 'Nunito', sans-serif !important;
+  font-size: 13px !important;
+  font-weight: 800 !important;
+  padding: 10px 24px !important;
+  border-radius: 100px !important;
+  border: none !important;
+  background: #F5A623 !important;
+  color: #1A1025 !important;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(245, 166, 35, 0.35);
+  transition: background 0.15s, transform 0.1s;
+  margin: 8px 4px;
+}
+
+.btn-marcador-nueva:hover {
+  background: #D4881A !important;
+  transform: translateY(-1px);
+}

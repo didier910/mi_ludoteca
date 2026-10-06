@@ -1,0 +1,21 @@
+#root {
+  text-align: center;
+}
+
+/* El max-width vive en un wrapper de contenido, no en #root,
+   así el Header puede ocupar el 100% del ancho de la pantalla */
+.app-content {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: calc(56px + 2rem) 2rem 2rem;
+}
+
+@media (max-width: 550px) {
+  .app-content {
+    padding: calc(56px + 1rem) 1rem 1rem;
+  }
+}
+
+body {
+  transition: background-color 0.3s, color 0.3s;
+}
