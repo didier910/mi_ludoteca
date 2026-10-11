@@ -15,14 +15,14 @@ export const MenuRouter = () => {
 
   return (
         <Routes>
-            <Route path="games" element={<GamesPage />} />
-            <Route path="glosario" element={<Glosario />} />
-            <Route path="premios" element={<Premios />} />
-            <Route path="marcadores" element={<Marcadores />} />
-            <Route path="game/:id" element={<Game />} />
-            <Route path="glosario/:id" element={<Item />} />
-            <Route path="premios/:id" element={<Item />} />
-            <Route path="marcadores/:id" element={<Marcador />} />
+            <Route path="/games" element={<GamesPage />} />
+            <Route path="/glosario" element={<Glosario />} />
+            <Route path="/premios" element={<Premios />} />
+            <Route path="/marcadores" element={<Marcadores />} />
+            <Route path="/game/:id" element={<Game />} />
+            <Route path="/glosario/:id" element={<Item />} />
+            <Route path="/premios/:id" element={<Item />} />
+            <Route path="/marcadores/:id" element={<Marcador />} />
             <Route path="/" element={<GamesPage />} />
         </Routes>
   )

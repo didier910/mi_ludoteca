@@ -49,6 +49,21 @@
 
   <meta name="apple-mobile-web-app-title" content="Mis juegos">
   <title>Mis juegos</title>
+
+  <script>
+    const query = new URLSearchParams(window.location.search);
+    const redirect = query.get('p');
+
+    if (redirect) {
+      window.history.replaceState(
+        null,
+        null,
+        window.location.origin +
+          window.location.pathname.split('/').slice(0, 2).join('/') +
+          redirect
+      );
+    }
+  </script>
 </head>
 
 <body>
