@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { getImageUrl } from "../../../utils/getImageUrl";
 
 
 export const ContadorItemAsc = ({imagen, onSuma}) => {
@@ -19,7 +20,7 @@ export const ContadorItemAsc = ({imagen, onSuma}) => {
 
     return (
         <div>
-            <img src={`../images/elementos/${imagen}`} alt="" className="img-loseta" />
+            <img src={getImageUrl('elementos', imagen)} alt="" className="img-loseta" />
             <button onClick={decrement} className="botonmenos">-</button>
             <span>{count}</span>
             <button onClick={increment} className="botonmas">+</button>

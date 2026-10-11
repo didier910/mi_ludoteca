@@ -24,7 +24,7 @@ const registerServiceWorker = async () => {
       return;
     }
 
-    const registration = await navigator.serviceWorker.register('/sw.js');
+    const registration = await navigator.serviceWorker.register(`${import.meta.env.BASE_URL}sw.js`);
     console.log('Service Worker registered:', registration);
   } catch (error) {
     console.error('Service Worker registration failed:', error);

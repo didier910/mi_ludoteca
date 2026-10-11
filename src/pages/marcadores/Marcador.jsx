@@ -6,6 +6,7 @@ import { MarcadorBarras } from './MarcadorBarras';
 import { InputPlayers } from './InputPlayers';
 import { TableroBasta } from './Basta/TableroBasta';
 import { TableroScotland } from './ScotlandYard/TableroScotland';
+import { getImageUrl } from '../../utils/getImageUrl';
 
 export const Marcador = () => {
 
@@ -20,7 +21,7 @@ export const Marcador = () => {
     return (
         <>
             <h3 className="seccion-titulo">
-                <img src={`../images/logos/${score.logo}`} alt={score.name} className='img-game-title' />
+                <img src={getImageUrl('logos', score.logo)} alt={score.name} className='img-game-title' />
             </h3>
 
             <div>

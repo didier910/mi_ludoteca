@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { getImageUrl } from "../../../utils/getImageUrl";
 
 
 export const ContadorCubosAkropolis = ({onSuma}) => {
@@ -17,7 +18,7 @@ export const ContadorCubosAkropolis = ({onSuma}) => {
     return (
             <p>
                 <img 
-                    src={`../images/elementos/akropolis-cubo.png`} alt="" 
+                    src={getImageUrl('elementos', 'akropolis-cubo.png')} alt="" 
                     className="img-loseta" 
                 />
                 <span>{' '}</span>

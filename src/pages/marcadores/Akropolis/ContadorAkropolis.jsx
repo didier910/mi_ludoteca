@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { getImageUrl } from "../../../utils/getImageUrl";
 import { Star } from "../../Icons"
 
 
@@ -36,7 +37,7 @@ export const ContadorAkropolis = ({ imagen, onSuma }) => {
                     onChange={handleStarNum}
                     min="0"
                 />{' '}x{' '}
-                <img src={`../images/elementos/${imagen}`} alt="" className="img-loseta" />
+                <img src={getImageUrl('elementos', imagen)} alt="" className="img-loseta" />
                 <input
                     type="number"
                     className="input-number"

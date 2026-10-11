@@ -3,12 +3,13 @@ import './marcadores.css';
 import '../glosario_premios/glosario.css';
 import { useState } from 'react';
 import { scores } from '../../data/scores';
+import { getImageUrl } from '../../utils/getImageUrl';
 
 function Score({ name, logo, verScore }) {
   return (
     <div className='score-card' onClick={verScore}>
       <img
-        src={`../images/logos/${logo}`}
+        src={getImageUrl('logos', logo)}
         alt={name}
         className='img-game-title'
       />
