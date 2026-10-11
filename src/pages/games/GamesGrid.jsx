@@ -5,6 +5,7 @@ import { games } from '../../data/games';
 import { Buscador } from '../buscador/Buscador';
 import { getGameByName, getGameByType, getGameByMechanics } from '../../helpers';
 import { useState, useEffect } from 'react';
+import { getImageUrl } from '../../utils/getImageUrl'; // o la ruta donde tengas tu archivo
 
 const TIPO_COLORES = {
   'Party': '#FF6B6B',
@@ -31,7 +32,7 @@ function Juego({ id, nombre, imagen, complejidad, jugadores, tipos, verJuego }) 
       {/* Área de imagen */}
       <div className='container-img'>
         <img
-          src={`../images/games/${imagen}`}
+          src={getImageUrl('games', imagen)}
           alt={nombre}
           className='game-imagen'
         />
