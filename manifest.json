@@ -10,22 +10,16 @@
     "theme_color": "#5B2D8E",
     "icons": [
         {
-            "src": "icon-ludoteca.png",
+            "src": "icon-ludoteca-192.png",
             "type": "image/png",
-            "sizes": "96x96",
+            "sizes": "192x192",
             "purpose": "any"
         },
         {
             "src": "icon-ludoteca.png",
             "type": "image/png",
-            "sizes": "192x192",
-            "purpose": "any maskable"
-        },
-        {
-            "src": "icon-ludoteca.png",
-            "type": "image/png",
             "sizes": "512x512",
-            "purpose": "any maskable"
+            "purpose": "any"
         }
     ]
 }
