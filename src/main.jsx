@@ -10,7 +10,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 // Render app
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/mi_ludoteca">
       <App />
     </BrowserRouter>
   </React.StrictMode>
