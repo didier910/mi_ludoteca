@@ -5,7 +5,7 @@ import { games } from '../../data/games';
 import { Buscador } from '../buscador/Buscador';
 import { getGameByName, getGameByType, getGameByMechanics } from '../../helpers';
 import { useState, useEffect } from 'react';
-import { getImageUrl } from '../../utils/getImageUrl'; // o la ruta donde tengas tu archivo
+import { getImageUrl } from '../../utils/getImageUrl';
 
 const TIPO_COLORES = {
   'Party': '#FF6B6B',

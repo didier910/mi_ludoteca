@@ -4,6 +4,7 @@ import { getHeroById } from "../../helpers";
 import { Reglas, Tool } from '../Icons';
 import { RenderText } from '../RenderText';
 import { useState } from 'react';
+import { getImageUrl } from '../../utils/getImageUrl';
 
 export const Game = () => {
 
@@ -28,7 +29,7 @@ export const Game = () => {
         <div className="game-hero-content">
           <div className="game-hero-img-wrap">
             <img
-              src={`../images/games/${game.imagen}`}
+              src={getImageUrl('games', game.imagen)}
               alt={game.nombre}
               className="game-img"
             />
