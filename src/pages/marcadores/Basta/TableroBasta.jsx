@@ -1,4 +1,4 @@
-import { useState, useCallback, useMemo } from 'react';
+import { useState, useCallback, useMemo, useEffect, useRef } from 'react';
 import { questions } from '../../../data/questions';
 import { generarColorHSLSobrio } from '../../../helpers/coloresSobrios';
 
@@ -24,7 +24,15 @@ const INITIAL_STATE = {
 
 export const TableroBasta = () => {
   const [state, setState] = useState(INITIAL_STATE);
+  const [isGeneratingLetter, setIsGeneratingLetter] = useState(false);
+  const letterIntervalRef = useRef(null);
   const { randomQuestion, randomLetter, checkboxChecked, preguntasYColores, numPreguntas } = state;
+
+  useEffect(() => () => {
+    if (letterIntervalRef.current !== null) {
+      clearInterval(letterIntervalRef.current);
+    }
+  }, []);
 
   const generateNewQuestion = useCallback(() => {
     if (!questions?.length) return;
@@ -45,10 +53,23 @@ export const TableroBasta = () => {
   }, []);
 
   const generateRandomLetter = useCallback((useSpecialLetters) => {
+    if (isGeneratingLetter) return;
+
     const letters = useSpecialLetters ? COMMON_LETTERS + SPECIAL_LETTERS : COMMON_LETTERS;
-    const randomIndex = Math.floor(Math.random() * letters.length);
-    setState(prev => ({ ...prev, randomLetter: letters[randomIndex] }));
-  }, []);
+    let ticks = 0;
+    setIsGeneratingLetter(true);
+    letterIntervalRef.current = setInterval(() => {
+      const randomIndex = Math.floor(Math.random() * letters.length);
+      setState(prev => ({ ...prev, randomLetter: letters[randomIndex] }));
+
+      ticks += 1;
+      if (ticks === 20) {
+        clearInterval(letterIntervalRef.current);
+        letterIntervalRef.current = null;
+        setIsGeneratingLetter(false);
+      }
+    }, 100);
+  }, [isGeneratingLetter]);
 
   const handleNumPreguntasChange = useCallback((event) => {
     setState(prev => ({ ...prev, numPreguntas: parseInt(event.target.value, 10) }));
@@ -96,7 +117,11 @@ export const TableroBasta = () => {
 
       <section className='container-info'>
         <div className='elemento-info-1'>
-          <button className='btn-marcador-accion' onClick={() => generateRandomLetter(checkboxChecked)}>
+          <button
+            className='btn-marcador-accion'
+            onClick={() => generateRandomLetter(checkboxChecked)}
+            disabled={isGeneratingLetter}
+          >
             Genera una letra
           </button>
 
@@ -108,6 +133,7 @@ export const TableroBasta = () => {
               name="miCheckbox"
               checked={checkboxChecked}
               onChange={handleCheckboxChange}
+              disabled={isGeneratingLetter}
             />
             <label className="custom-label" htmlFor="miCheckbox">
               K, Ñ, Q, W, X, Y, Z

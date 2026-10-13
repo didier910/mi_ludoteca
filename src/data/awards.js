@@ -122,7 +122,7 @@ export const awards =
                         "contenido": [
                             {
                                 "item": "Bomb Busters - Hisashi Hayashi - Pegasus Games / Cocktail Games (GANADOR)",
-                                "link": "/game/64"
+                                "link": "/mi_ludoteca/game/64"
                             },
                             {
                                 "item": "Flip 7 - Eric Olsen - Kosmos / The Op Games"
@@ -145,7 +145,7 @@ export const awards =
                         "contenido": [
                             {
                                 "item": "Sky Team - Luc Rémond - Kosmos / Scorpion Masqué (GANADOR)",
-                                "link": "/game/66"
+                                "link": "/mi_ludoteca/game/66"
                             },
                             {
                                 "item": "In the Footsteps of Darwin - Grégory Grard and Matthieu Verdier - Sorry We Are French"
@@ -215,7 +215,7 @@ export const awards =
                             },
                             {
                                 "item": "MicroMacro: Crime City - Johannes Sich - Edition Spielwiese (SD Games) (GANADOR)",
-                                "link": "/game/42"
+                                "link": "/mi_ludoteca/game/42"
                             },
                             {
                                 "item": "Zombie Teenz Evolution - Annick Lobet - Le Scorpion Masqué"
@@ -257,7 +257,7 @@ export const awards =
                         "contenido": [
                             {
                                 "item": "Just One - Ludovic Roudy y Bruno Sautter - Repos Production (Asmodee) (GANADOR)",
-                                "link": "/game/39"
+                                "link": "/mi_ludoteca/game/39"
                             },
                             {
                                 "item": "Lama - Reiner Knizia - Amigo"
@@ -286,7 +286,7 @@ export const awards =
                             },
                             {
                                 "item": "The Mind - Wolfgang Warsch - Nürnberger-Spielkarten-Verlag",
-                                "link": "/game/10"
+                                "link": "/mi_ludoteca/game/10"
                             }
                         ]
                     }
@@ -375,7 +375,7 @@ export const awards =
                             },
                             {
                                 "item": "Splendor - Marc Andre - Space Cowboys",
-                                "link": "/game/63"
+                                "link": "/mi_ludoteca/game/63"
                             }
                         ]
                     }
@@ -442,7 +442,7 @@ export const awards =
                             },
                             {
                                 "item": "Forbidden Island - Matt Leacock - Schmidt Spiele",
-                                "link": "/game/7"
+                                "link": "/mi_ludoteca/game/7"
                             }
                         ]
                     }
@@ -459,7 +459,7 @@ export const awards =
                         "contenido": [
                             {
                                 "item": "Dixit - Jean-Louis Roubira, Libellud (GANADOR)",
-                                "link": "/game/5"
+                                "link": "/mi_ludoteca/game/5"
                             },
                             {
                                 "item": "Identik - William P. Jacobson y Amanda A. Kohout - Asmodee"
@@ -500,7 +500,7 @@ export const awards =
                             },
                             {
                                 "item": "Pandemic - Matt Leacock, Pegasus Spiele",
-                                "link": "/game/3"
+                                "link": "/mi_ludoteca/game/3"
                             }
                         ]
                     }
@@ -701,7 +701,7 @@ export const awards =
                         "contenido": [
                             {
                                 "item": "Carcassonne - Klaus-Jürgen Wrede, Hans im Glück (GANADOR)",
-                                "link": "/game/12"
+                                "link": "/mi_ludoteca/game/12"
                             },
                             {
                                 "item": "Das Amulett - Alan R. Moon y Aaron Weissblum, Goldsieber Spiele"
@@ -897,7 +897,7 @@ export const awards =
                         "contenido": [
                             {
                                 "item": "La Tripulación (The Crew) - Thomas Sing - Devir (Kosmos) (GANADOR)",
-                                "link": "/game/44"
+                                "link": "/mi_ludoteca/game/44"
                             },
                             {
                                 "item": "Cartógrafos: Un Relato de Roll Player - Jordy Adan - Pegasus Spiele (Gen X)"
@@ -964,7 +964,7 @@ export const awards =
                         "contenido": [
                             {
                                 "item": "EXIT - Inka & Markus Brand - Kosmos (GANADOR)",
-                                "link": "/game/30"
+                                "link": "/mi_ludoteca/game/30"
                             },
                             {
                                 "item": "Saqueadores del Mar del Norte - Shem Phillips - Schwerkraft-Verlag"
