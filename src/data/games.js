@@ -19670,5 +19670,161 @@ export const games =
                     }
                 }
             ]
+        },
+        {
+            "id": "73",
+            "nombre": 'No puedes decir "EH..."',
+            "imagen": "no_puedes_decir_eh.jpg",
+            "jugadores": "4-10",
+            "mejor": "4, 6, 8",
+            "tiempo": "20 minutos",
+            "edad": "10+",
+            "year": "2023",
+            "autor": "",
+            "complejidad": "1.00/5",
+            "dependencia": "Si",
+            "tipos": "Party, Filler",
+            "mecanicas": "Deducción",
+            "pdf": "",
+            "video": [
+                {
+                    "elemento": {
+                        "tipo": "subtitulo",
+                        "contenido": "Como jugar"
+                    }
+                },
+                {
+                    "elemento": {
+                        "tipo": "video",
+                        "contenido": "https://www.youtube-nocookie.com/embed/JX8ZfKBYb3g?si=oMsoQHqlvd6K1-px"
+
+                    }
+                }
+            ],
+            "descripcion": [
+                {
+                    "elemento": {
+                        "tipo": "parrafo",
+                        "contenido": '"No puedes decir EH" es un caótico y acelerado juego de fiesta por equipos creado por Big Potato Games. El objetivo del juego es hacer avanzar a tu equipo por el tablero hasta llegar a la meta, pero para lograrlo deberás superar una carrera de descripción verbal llena de presión, trampas e interrupciones en tan solo 45 segundos.'
+                    }
+                },
+                {
+                    "elemento": {
+                        "tipo": "parrafo",
+                        "contenido": 'La mecánica principal gira en torno a describir combinaciones disparatadas de palabras. En cada turno, el jugador activo toma dos cartas para formar una pareja de palabras al azar (por ejemplo, una de la Carta A y otra de la Carta B) y debe lograr que su equipo las adivine en orden. La trampa fatal es que, mientras habla, tiene estrictamente prohibido dudar o balbucear diciendo muletillas como "eh" o "mm", así como quedarse en silencio.'
+                    }
+                },
+                {
+                    "elemento": {
+                        "tipo": "parrafo",
+                        "contenido": 'Mientras el orador intenta dar pistas a toda velocidad, el equipo rival actúa como juez acérrimo sosteniendo un timbre o campana. Si el orador llega a pronunciar un "eh", un "mm" o se pausa a pensar, el rival hace sonar el timbre de inmediato, interrumpiendo el turno y ganando un punto. Además, cuando los equipos caen en casillas especiales del tablero, se activan restricciones adicionales (como tener prohibido usar palabras que comiencen con una letra específica), lo que vuelve el reto aún más enloquecido.'
+                    }
+                },
+                {
+                    "elemento": {
+                        "tipo": "parrafo",
+                        "contenido": 'Es un party game muy dinámico, diseñado para grupos de 4 a 10 jugadores, donde la tensión se transforma en risas garantizadas al ver cómo la mente falla bajo la presión del reloj de arena y el acecho del timbre enemigo.'
+                    }
+                }
+            ],
+            "guia": [
+                {
+                    "elemento": {
+                        "tipo": "subtitulo",
+                        "contenido": "Preparación del juego"
+                    }
+                },
+                {
+                    "elemento": {
+                        "tipo": "listanum",
+                        "contenido": [
+                            {
+                                "item": 'Formar dos equipos y colocar los marcadores de puntuación en la casilla de salida (GO).'
+                            },
+                            {
+                                "item": 'Repartir 6 cartas de regla a cada equipo. En secreto, cada equipo elige 3 cartas para entregarlas al rival (se colocan boca abajo alineadas en sus casillas amarillas) y descarta las 3 restantes.'
+                            },
+                            {
+                                "item": 'Disponer en el centro los mazos de palabras A y B, el reloj de 45 segundos y la campana.'
+                            }
+                        ]
+                    }
+                },
+                {
+                    "elemento": {
+                        "tipo": "subtitulo",
+                        "contenido": "Dinámica del turno"
+                    }
+                },
+                {
+                    "elemento": {
+                        "tipo": "lista",
+                        "contenido": [
+                            {
+                                "item": 'El equipo activo elige a un descriptor, quien toma en secreto una carta del mazo A y una del mazo B.'
+                            },
+                            {
+                                "item": 'El equipo contrario sostiene la campana y voltea el reloj de arena de 45 segundos.'
+                            },
+                            {
+                                "item": 'Orden obligatorio de pistas: El descriptor debe hacer que su equipo adivine primero la palabra A y luego la palabra B. No se puede alterar el orden.'
+                            },
+                            {
+                                "item": 'Cómo anotar un punto: El equipo debe decir ambas palabras juntas y en el orden correcto. Al acertar, el marcador del equipo avanza 1 casilla y pueden tomar un nuevo par de cartas para continuar mientras quede tiempo.'
+                            }
+                        ]
+                    }
+                },
+                {
+                    "elemento": {
+                        "tipo": "subtitulo",
+                        "contenido": "Regla principal y uso de la campana"
+                    }
+                },
+                {
+                    "elemento": {
+                        "tipo": "lista",
+                        "contenido": [
+                            {
+                                "item": 'Lo prohibido: El descriptor no puede decir muletillas de duda ("eh", "em", "ah", "um"), alargar palabras, ni mencionar partes de la palabra que está describiendo.'
+                            },
+                            {
+                                "item": 'Penalización: Si el descriptor comete un error, el equipo rival toca la campana y avanza inmediatamente 1 casilla en el tablero.'
+                            }
+                        ]
+                    }
+                },
+                {
+                    "elemento": {
+                        "tipo": "subtitulo",
+                        "contenido": "Casillas especiales"
+                    }
+                },
+                {
+                    "elemento": {
+                        "tipo": "lista",
+                        "contenido": [
+                            {
+                                "item": 'Casillas amarillas (Cartas de regla): Al cruzar por una casilla amarilla, se revela la carta de regla correspondiente. Estas reglas son acumulativas y aplican únicamente al equipo que las activó.'
+                            },
+                            {
+                                "item": 'Zonas de peligro (Símbolo de exclamación): Al ingresar a estas casillas, la restricción de no decir "eh" ni muletillas se extiende a todos los integrantes del equipo y no solo al descriptor. Si cualquiera dice una muletilla, el rival toca la campana y avanza.'
+                            }
+                        ]
+                    }
+                },
+                {
+                    "elemento": {
+                        "tipo": "subtitulo",
+                        "contenido": "Fin del juego"
+                    }
+                },
+                {
+                    "elemento": {
+                        "tipo": "parrafo",
+                        "contenido": 'El juego concluye en el momento en que un equipo alcanza la casilla final del tablero, proclamándose ganador.'
+                    }
+                }
+            ]
         }
     ] 
