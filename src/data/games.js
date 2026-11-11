@@ -5586,7 +5586,7 @@ export const games =
             "tiempo": "10-15 minutos",
             "edad": "8+",
             "year": "2021",
-            "autor": "",
+            "autor": "-",
             "complejidad": "1.00/5",
             "dependencia": "No",
             "tipos": "Filler, Abstracto, Puzzle",
@@ -5761,7 +5761,7 @@ export const games =
             "tiempo": "120 minutos",
             "edad": "8+",
             "year": "2002",
-            "autor": "",
+            "autor": "-",
             "complejidad": "1.00/5",
             "dependencia": "Si",
             "tipos": "Estratégico, Clásico",
@@ -7505,7 +7505,7 @@ export const games =
             "tiempo": "",
             "edad": "6+",
             "year": "",
-            "autor": "",
+            "autor": "-",
             "complejidad": "",
             "dependencia": "Si",
             "tipos": "Party, Clásico, Trivia",
@@ -8481,7 +8481,7 @@ export const games =
             "tiempo": "",
             "edad": "8+",
             "year": "",
-            "autor": "",
+            "autor": "-",
             "complejidad": "1.14/5",
             "dependencia": "",
             "tipos": "Party, Cooperativo, Tiempo real, Trivia",
@@ -10212,7 +10212,7 @@ export const games =
             "tiempo": "30 minutos",
             "edad": "8+",
             "year": "2015",
-            "autor": "",
+            "autor": "-",
             "complejidad": "",
             "dependencia": "",
             "tipos": "Filler, Abstracto, Puzzle",
@@ -11909,7 +11909,7 @@ export const games =
             "tiempo": "",
             "edad": "",
             "year": "",
-            "autor": "",
+            "autor": "-",
             "complejidad": "",
             "dependencia": "",
             "tipos": "Abstracto, Puzzle",
@@ -14104,7 +14104,7 @@ export const games =
             "tiempo": "30 minutos",
             "edad": "8+",
             "year": "2012",
-            "autor": "",
+            "autor": "-",
             "complejidad": "1.03/5",
             "dependencia": "Si",
             "tipos": "Party, Filler, Tiempo real, Clásico",
@@ -16636,7 +16636,7 @@ export const games =
             "tiempo": "",
             "edad": "4+",
             "year": "",
-            "autor": "",
+            "autor": "-",
             "complejidad": "",
             "dependencia": "No",
             "tipos": "Party, Filler",
@@ -19680,7 +19680,7 @@ export const games =
             "tiempo": "20 minutos",
             "edad": "10+",
             "year": "2023",
-            "autor": "",
+            "autor": "-",
             "complejidad": "1.00/5",
             "dependencia": "Si",
             "tipos": "Party, Filler",
@@ -19825,6 +19825,212 @@ export const games =
                         "contenido": 'El juego concluye en el momento en que un equipo alcanza la casilla final del tablero, proclamándose ganador.'
                     }
                 }
+            ]
+        },
+        {
+            "id": "74",
+            "nombre": 'King of Tokyo Duel',
+            "imagen": "king_of_tokyo_duel.jpg",
+            "jugadores": "2",
+            "mejor": "2",
+            "tiempo": "20 minutos",
+            "edad": "8+",
+            "year": "2024",
+            "autor": " Richard Garfield ",
+            "complejidad": "2.02/5",
+            "dependencia": "Si",
+            "tipos": "Estratégico",
+            "mecanicas": "Lanzamiento de dados",
+            "pdf": "",
+            "video": [
+                {
+                    "elemento": {
+                        "tipo": "subtitulo",
+                        "contenido": "Como jugar"
+                    }
+                },
+                {
+                    "elemento": {
+                        "tipo": "video",
+                        "contenido": "https://www.youtube-nocookie.com/embed/AbZ93lrhx0c?si=s5LYlGxQdSIv6Gqi"
+
+                    }
+                }
+            ],
+            "descripcion": [
+                {
+                    "elemento": {
+                        "tipo": "parrafo",
+                        "contenido": 'King of Tokyo Duel es un juego de mesa ágil e intenso para dos jugadores, creado por Richard Garfield y editado por IELLO. Esta entrega toma la esencia del clásico King of Tokyo y la adapta a un enfrentamiento directo estilo estira y afloja, donde dos monstruos colosales luchan cara a cara en partidas rápidas de unos 20 minutos.'
+                    }
+                },
+                {
+                    "elemento": {
+                        "tipo": "parrafo",
+                        "contenido": 'En cada turno, lanzas dados personalizados hasta tres veces para gestionar tu estrategia. Las tiradas te permiten atacar al rival, recuperar vida, ganar cubos de energía o activar los poderes exclusivos de tu monstruo mediante tiradas especiales.'
+                    }
+                },
+                {
+                    "elemento": {
+                        "tipo": "parrafo",
+                        "contenido": 'La gran novedad de esta edición son los tracks de Fama y Destrucción. Al acumular ciertos símbolos en los dados, atraes los marcadores hacia tu extremo del tablero. Puedes lograr la victoria destruyendo la vida de tu enemigo, llevando un marcador hasta tu casilla final o ubicando ambos peones en tus zonas calientes.'
+                    }
+                },
+                {
+                    "elemento": {
+                        "tipo": "parrafo",
+                        "contenido": 'Para darle más variedad, puedes gastar energía para comprar cartas de poder que otorgan ventajas permanentes o inmediatas. Con ilustraciones vibrantes de Quentin Regnes y 6 monstruos únicos, es un título de dados repleto de combate táctico, azote constante y mucha rejugabilidad.'
+                    }
+                }
+            ],
+            "guia": [
+                {
+                    "elemento": {
+                        "tipo": "subtitulo",
+                        "contenido": "¿Cómo se gana? (3 Condiciones de Victoria)"
+                    }
+                },
+                {
+                    "elemento": {
+                        "tipo": "parrafo",
+                        "contenido": 'La partida termina al instante si logras cualquiera de estos 3 objetivos:'
+                    }
+                },
+                {
+                    "elemento": {
+                        "tipo": "listanum",
+                        "contenido": [
+                            {
+                                "item": 'Eliminación: Reducir la vida de tu rival a 0.'
+                            },
+                            {
+                                "item": 'Dominio absoluto: Empujar el peón de Fama o el de Destrucción hasta la casilla final de tu lado del tablero.'
+                            },
+                            {
+                                "item": 'Zonas calientes: Conseguir que ambos peones (Fama y Destrucción) estén colocados dentro de las zonas calientes (casillas iluminadas) de tu lado del tablero.'
+                            }
+                        ]
+                    }
+                },
+                {
+                    "elemento": {
+                        "tipo": "subtitulo",
+                        "contenido": "Preparación rápida"
+                    }
+                },
+                {
+                    "elemento": {
+                        "tipo": "lista",
+                        "contenido": [
+                            {
+                                "item": 'Coloca el tablero central entre ambos jugadores con los peones de Fama y Destrucción en las casillas iniciales del centro.'
+                            },
+                            {
+                                "item": 'Cada jugador elige un monstruo y ajusta su dial de salud al valor máximo indicado en su tarjeta.'
+                            },
+                            {
+                                "item": 'Baraja las cartas de energía y revela 3 para formar el mercado (la carta del extremo derecho recibe 1 cubo de descuento en su coste).'
+                            },
+                            {
+                                "item": 'Lanzan los 6 dados para decidir el jugador inicial (quien saque más garras). En el primer turno, el jugador inicial tira solo 5 dados, y el segundo jugador recibe 1 cubo de energía como compensación.'
+                            }
+                        ]
+                    }
+                },
+                {
+                    "elemento": {
+                        "tipo": "subtitulo",
+                        "contenido": "Estructura del turno (4 Fases)"
+                    }
+                },
+                {
+                    "elemento": {
+                        "tipo": "subtitulo",
+                        "contenido": "Fase 1: Lanzar los dados"
+                    }
+                },
+                {
+                    "elemento": {
+                        "tipo": "lista",
+                        "contenido": [
+                            {
+                                "item": 'Tiras tus 6 dados rojos hasta 3 veces por turno.'
+                            },
+                            {
+                                "item": 'En cada tirada puedes apartar los resultados que quieras conservar o volver a tirar los dados que habías apartado antes. (Si tienes fichas de dado extra, puedes descartarlas para sumar hasta 2 dados adicionales en tu tirada).'
+                            }
+                        ]
+                    }
+                },
+                {
+                    "elemento": {
+                        "tipo": "subtitulo",
+                        "contenido": "Fase 2: Resolver los dados"
+                    }
+                },
+                {
+                    "elemento": {
+                        "tipo": "lista",
+                        "contenido": [
+                            {
+                                "item": 'Garras: Infliges 1 punto de daño al rival por cada garra.'
+                            },
+                            {
+                                "item": 'Corazones: Recuperas 1 punto de vida por cada corazón (sin superar tu vida máxima inicial).'
+                            },
+                            {
+                                "item": 'Rayos: Obtienes 1 cubo de energía por cada rayo.'
+                            },
+                            {
+                                "item": 'Exclamaciones: Activan el poder o habilidad especial de tu personaje.'
+                            },
+                            {
+                                "item": 'Fama y Destrucción: Necesitas sacar 3 símbolos iguales de Fama (estrellas) o Destrucción (edificios) para mover ese peón 1 casilla hacia ti. Cada símbolo adicional del mismo tipo te permite moverlo 1 casilla extra.'
+                            }
+                        ]
+                    }
+                },
+                {
+                    "elemento": {
+                        "tipo": "subtitulo",
+                        "contenido": "Fase 3: Mercado de cartas (Comprar o ahorrar)"
+                    }
+                },
+                {
+                    "elemento": {
+                        "tipo": "lista",
+                        "contenido": [
+                            {
+                                "item": 'Puedes gastar cubos de energía para comprar cartas del mercado (pueden ser de efecto inmediato o permanentes).'
+                            },
+                            {
+                                "item": 'Si compras una carta con el símbolo de clamor, colocas la loseta de clamor correspondiente en alguna casilla libre del tablero para obtener bonificaciones o alterar el camino del peón.'
+                            },
+                            {
+                                "item": 'Puedes gastar 2 cubos de energía para renovar las 3 cartas del mercado.'
+                            },
+                            {
+                                "item": 'Si no compras ninguna carta en esta fase, te llevas 1 cubo de energía gratis.'
+                            }
+                        ]
+                    }
+                },
+                {
+                    "elemento": {
+                        "tipo": "subtitulo",
+                        "contenido": "Fase 4: Final del turno"
+                    }
+                },
+                {
+                    "elemento": {
+                        "tipo": "lista",
+                        "contenido": [
+                            {
+                                "item": 'Aplicas efectos de cartas que digan "al final del turno" y le pasas los dados al contrincante.'
+                            }
+                        ]
+                    }
+                },
             ]
         }
     ] 
